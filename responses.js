@@ -121,7 +121,8 @@ responses.push({"images": [
 
 exports.random = function() {
   var min = 0;
-  var count = responses.length;
+  var count = responses.length
+  // http://stackoverflow.com/questions/4959975/generate-random-value-between-two-numbers-in-javascript;
   var rnd = Math.floor(Math.random() * count) + min;
 
   var data = responses[rnd];
